@@ -11,9 +11,11 @@ function Profile() {
         const fetchProfile = async () => {
             try {
                 const token = localStorage.getItem('token');
-                const response = await axios.get(`${BASE_URL}/profile`, {
-                    headers: { Authorization: `Bearer ${token}` }
-                });
+                const response = await fetch("https://server-node-eef9.onrender.com/profile", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(userData),
+                  });
                 setUser(response.data);
             } catch (error) {
                 console.error("Error fetching profile:", error);

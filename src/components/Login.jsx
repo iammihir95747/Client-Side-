@@ -14,7 +14,11 @@ function Login() {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post(`${BASE_URL}/login`, { email, password });
+            const response = await fetch("https://server-node-eef9.onrender.com/login", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(userData),
+              });
             toast.success("Login Successful ✅");
             localStorage.setItem('token', response.data.token); // Store token
             navigate('/profile'); // Redirect to profile

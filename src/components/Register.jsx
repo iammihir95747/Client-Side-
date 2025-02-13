@@ -37,10 +37,13 @@ function Register() {
         if (!validate()) return;
 
         try {
-            const response = await axios.post(`${API_BASE}/register`, 
-                { username, email, password },
-                { withCredentials: true }  // Ensures cookies & sessions work
-            );
+          
+            const response = await fetch("https://server-node-eef9.onrender.com/register", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(userData),
+              });
+
             toast.success(response.data.message);
             setUsername('');
             setEmail('');
