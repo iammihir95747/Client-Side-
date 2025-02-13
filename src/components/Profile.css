@@ -1,0 +1,46 @@
+/* Profile Card Styling */
+.profile-card {
+  color: #ffffff;
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    height: auto;
+    padding:100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  }
+  .profiletxt{
+    color: #0f0f0f;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+  }
+  
+  .profile-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .profile-info {
+    font-size: 16px;
+    color: #ffffff;
+  }
+  
+  .profile-info p {
+    margin: 10px 0;
+  }
+  
+  .profile-info strong {
+    font-weight: 600;
+  }
+  

@@ -1,0 +1,101 @@
+/* Services.css */
+
+.services-container {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #000000;
+  }
+  
+  .servicestitle{
+    color: #fff;
+    padding: 10px;
+    background-color: rgb(19, 19, 201);
+    width: fit-content;
+    margin: auto;
+  }
+  .servicebtn{
+    background-color:rgb(19, 19, 201);
+    border: none;
+    color: #fff;
+    
+  }
+  
+  .services-cards {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .service-card {
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.6s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 7px #ebebeb;
+  }
+  
+  .card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transition: opacity 0.3s ease;
+  }
+  .card-content:hover{
+    cursor: pointer;
+  }
+  
+  .card-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    transition: opacity 0.3s ease;
+  }
+  
+  h3 {
+    font-size: 22px;
+    margin: 10px 0;
+    color: #ffffff;
+    transition: opacity 0.3s ease;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #ffffff;
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* New dark fade hover effect */
+  .service-card:hover .card-content {
+    background-color: #000000; /* Dark background on hover */
+    color: #fff; /* Light text on dark background */
+  }
+  
+  .service-card:hover .card-content p {
+    opacity: 1; /* Make the description visible */
+  }
+  
+  .service-card:hover .card-content h3 {
+    opacity: 1; /* Make the title visible */
+  }
+  
+  .service-card:hover .card-icon {
+    opacity: 0.5; /* Fade out the icon */
+  }
+  
+  .service-card:hover .card-content p {
+    opacity: 1;
+  }
+  
+  

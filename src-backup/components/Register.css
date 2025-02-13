@@ -1,0 +1,112 @@
+/* Register.css */
+
+/* Form container */
+.form-container {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  margin-top: 50px;
+ 
+}
+
+/* Textform container */
+.textform {
+  background-color: rgb(0, 0, 0);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Form title */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Form input fields */
+input {
+  outline: none;
+  margin-top: 1px;
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ffffff;
+  font-size: 16px;
+  background-color: #000000;
+  border-top: none;
+  border-left: none;
+  border-radius: 0px;
+  border-right: none;
+}
+
+
+/* Submit button */
+.subbtn {
+  margin-top: 5px;
+  width: 100%;
+  padding: 10px;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  border: none;
+  transition: 0.5s ease;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border:1px solid  #ffffff;
+}
+
+.subbtn:hover {
+  background-color: #102fb8;
+  transition: 0.5s ease;
+  border: 0;
+}
+
+/* Styling for the alert message */
+.alert {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  text-align: right;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Success alert (green) */
+.success {
+  background-color: #070707;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Error alert (red) */
+.error {
+  background-color: #f44336;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Link to login page */
+.Loginlog {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.Loginlog:hover { 
+  text-decoration: underline;
+  transition:0.4s ease;
+}
+
+/* Styling for the "Already Have an account?" text */
+.ca {
+  text-align: left;
+  color: #c9c5c5;
+  margin-top: 1px;
+}
